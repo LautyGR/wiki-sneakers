@@ -1,0 +1,281 @@
+@media(min-width: 0px){
+    /* ----------- Css Reset ---------------*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* --------------- Estilado Global -----------------------------*/
+    body{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #5e725f;
+    }
+
+    h1{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        padding: 0px 10px;
+    }
+
+    h2{
+        font-family: "Roboto Condensed";
+        font-optical-sizing: auto;
+        font-weight:400;
+        font-style: normal;
+        font-size: 30px;
+        padding: 20px;
+
+    }
+
+    h3{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    h5{
+        font-size: 17px;
+        color: black;
+    }
+
+    a{
+        text-decoration: none;
+        color: blac;
+    }
+
+    /* --------------- Grid Template ---------------*/
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 65px auto 200px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+
+    /* -------------- Grid Elements -------------*/
+    .item_1{
+        display: flex;
+        grid-area: header;
+        background-color: #808080;
+        flex-direction: row;
+    }
+
+    .item_2{
+        display: flex;
+        grid-area: main;
+        background-color: #5e725f;
+        flex-direction:column;
+    }
+
+    .item_3{
+        display: flex;
+        grid-area: footer;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_6{
+        grid-area: nav;
+        background-color: #414141;
+    }
+
+    /* --------------- Header -----------------*/
+    .portada{
+        display:flex;
+        flex-direction: row;
+        padding: 0px 15px;
+        align-items: center;
+    }
+
+    .logo-image{
+        height: 60%;
+    }   
+
+    /*----------- Nav -----------------*/
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+        list-style: none;
+        text-align: left;
+        flex-direction: row;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        padding: 0.5em 1em;
+        border: 0.5em solid #333;
+        border-radius: 1em;
+        margin: 0em 0.5em
+    }
+
+    /* ------------------------ Main -------------------------*/
+    .article-container{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .articulo{
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        border: 0.5em solid black;
+        border-radius: 2em;
+        padding: 25px;
+        margin: 30px;
+        justify-content: center;
+    }
+
+    .article-image{
+        width: 100%;
+        height: auto;
+        justify-items: center;
+    }
+
+    .articulo-caracteristics{
+        padding: 20px;
+    }
+
+    /* ----------------------------------- Footer ---------------------------*/
+
+    .contenedor-superior-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding: 10px;
+    }
+
+    .contenedor-inferior-footer{
+        display: flex;
+        flex-direction: column;
+        display: block ;
+        text-align: center;
+        padding: 10px;
+        background-color: #414141;
+    }
+
+    /* --------------------- Contact ---------------------------*/
+
+}
+
+@media(min-width:768px){
+    /* --------------- Grid Template ---------------*/
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto 200px;
+        grid-template-areas: 
+        "header nav"
+        "main main"
+        "footer footer";
+    }
+
+    /* -------------- Grid Elements -------------*/
+
+    .item_6{
+        grid-area: nav;
+        background-color: #808080;
+    }
+
+    /* --------------- Header -----------------*/
+    .portada{
+        display:flex;
+        flex-direction: row;
+        padding: 0px 35px;
+        align-items: center;
+    }
+
+    .logo-image{
+        height: 70%;
+    }   
+
+    /*----------- Nav -----------------*/
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+        list-style: none;
+        text-align: left;
+        flex-direction: row;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;   
+        margin: 0px 0px;
+        border: 0px solid black;
+    }
+
+    nav a:hover{
+        text-decoration: underline;
+    }
+
+    /* ------------------------ Main -------------------------*/
+    .article-container{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1em;
+    }
+
+    .articulo{
+        background-color: rgb(204, 204, 11);
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        border: 0.5em solid black;
+        border-radius: 2em;
+        padding: 25px;
+        margin: 10px;
+        justify-content: center;
+        width: 250px;
+    }
+
+    .article-image{
+        width: 100%;
+        height: auto;
+        justify-items: center;
+    }
+
+    .articulo-caracteristics{
+        padding: 20px;
+    }
+
+    /* ----------------------------------- Footer ---------------------------*/
+
+    .contenedor-superior-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding: 10px;
+    }
+
+    .contenedor-inferior-footer{
+        display: flex;
+        flex-direction: column;
+        display: block ;
+        text-align: center;
+        padding: 10px;
+        background-color: #414141;
+    }
+    
+}
+
+@media(max-width: 500px){
+}
+
