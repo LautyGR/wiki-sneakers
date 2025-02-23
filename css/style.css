@@ -40,18 +40,16 @@
 
     a{
         text-decoration: none;
-        color: blac;
     }
 
     /* --------------- Grid Template ---------------*/
 
-    .container{
+    .container-principal{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 65px auto 200px;
+        grid-template-rows: auto auto 200px;
         grid-template-areas: 
         "header"
-        "nav"
         "main"
         "footer";
     }
@@ -80,43 +78,9 @@
         flex-direction: column;
     }
 
-    .item_6{
-        grid-area: nav;
-        background-color: #414141;
-    }
-
-    /* --------------- Header -----------------*/
-    .portada{
-        display:flex;
-        flex-direction: row;
-        padding: 0px 15px;
-        align-items: center;
-    }
-
-    .logo-image{
-        height: 60%;
-    }   
-
     /*----------- Nav -----------------*/
-    nav {
-        display: flex;
-        align-items: center;
-    }
-
-    nav ul{
-        display: flex;
-        list-style: none;
-        text-align: left;
-        flex-direction: row;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: white;
-        padding: 0.5em 1em;
-        border: 0.5em solid #333;
-        border-radius: 1em;
-        margin: 0em 0.5em
+    .logo-images{
+        width: 20%;
     }
 
     /* ------------------------ Main -------------------------*/
