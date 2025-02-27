@@ -125,6 +125,11 @@
         padding: 20px;
     }
 
+    .main__a{
+        color: rgb(9, 9, 218);
+        text-decoration: none;
+    }
+
     /* ----------------------------------- Footer ---------------------------*/
 
     .contenedor-superior-footer{
@@ -170,6 +175,7 @@
         margin: 5px 20px;
          font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
          text-decoration: underline;
+         color: white;
     }
 
     .article__div{
@@ -180,6 +186,7 @@
 
     .article__h2{
         margin: 10px;
+        color: white;
     }
 
     .article__image{
