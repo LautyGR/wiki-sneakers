@@ -38,10 +38,6 @@
         color: black;
     }
 
-    a{
-        text-decoration: none;
-    }
-
     /* --------------- Grid Template ---------------*/
 
     .container-principal{
@@ -54,12 +50,22 @@
         "footer";
     }
 
+    .container-contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 200px;
+        grid-template-areas: 
+        "header"
+        "contacto"
+        "footer";
+    }
+
     /* -------------- Grid Elements -------------*/
     .item_1{
         display: flex;
         grid-area: header;
         background-color: #808080;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .item_2{
@@ -74,13 +80,20 @@
         grid-area: footer;
         background-color: black;
         color: white;
-        display: flex;
         flex-direction: column;
+    }
+
+    .item_4{
+        display: flex;
+        grid-area: contacto;
+        background-color: darkgreen;
+        color: white;
+        flex-direction: row;
     }
 
     /*----------- Nav -----------------*/
     .logo-images{
-        width: 20%;
+        width: 15%;
     }
 
     /* ------------------------ Main -------------------------*/
@@ -98,7 +111,7 @@
         border: 0.5em solid black;
         border-radius: 2em;
         padding: 25px;
-        margin: 30px;
+        margin: 20px;
         justify-content: center;
     }
 
@@ -131,115 +144,283 @@
     }
 
     /* --------------------- Contact ---------------------------*/
-
-}
-
-@media(min-width:768px){
-    /* --------------- Grid Template ---------------*/
-
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px auto 200px;
-        grid-template-areas: 
-        "header nav"
-        "main main"
-        "footer footer";
-    }
-
-    /* -------------- Grid Elements -------------*/
-
-    .item_6{
-        grid-area: nav;
-        background-color: #808080;
-    }
-
-    /* --------------- Header -----------------*/
-    .portada{
-        display:flex;
-        flex-direction: row;
-        padding: 0px 35px;
-        align-items: center;
-    }
-
-    .logo-image{
-        height: 70%;
-    }   
-
-    /*----------- Nav -----------------*/
-    nav {
-        display: flex;
-        align-items: center;
-    }
-
-    nav ul{
-        display: flex;
-        list-style: none;
-        text-align: left;
-        flex-direction: row;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: black;   
-        margin: 0px 0px;
-        border: 0px solid black;
-    }
-
-    nav a:hover{
-        text-decoration: underline;
-    }
-
-    /* ------------------------ Main -------------------------*/
-    .article-container{
-        display: flex;
-        flex-flow: row wrap;
-        padding: 1em;
-    }
-
-    .articulo{
-        background-color: rgb(204, 204, 11);
+    form{
         display: flex;
         flex-direction: column;
-        list-style: none;
-        border: 0.5em solid black;
-        border-radius: 2em;
-        padding: 25px;
-        margin: 10px;
-        justify-content: center;
-        width: 250px;
+        padding: 10px;
     }
 
-    .article-image{
+    input{
         width: 100%;
-        height: auto;
-        justify-items: center;
-    }
-
-    .articulo-caracteristics{
-        padding: 20px;
-    }
-
-    /* ----------------------------------- Footer ---------------------------*/
-
-    .contenedor-superior-footer{
-        display: flex;
-        flex-direction: row;
-        justify-content:space-around;
-        padding: 10px;
-    }
-
-    .contenedor-inferior-footer{
-        display: flex;
-        flex-direction: column;
-        display: block ;
-        text-align: center;
-        padding: 10px;
-        background-color: #414141;
     }
     
+    .contact__div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__input{
+        width: 50%;
+        margin: 10px;
+    }
 }
 
-@media(max-width: 500px){
+@media(min-width: 768px){ /*<Tablets*/
+/* --------------- Estilado Global -----------------------------*/
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 0px 10px;
+}
+
+h5{
+    font-size: 17px;
+    color: black;
+    width: 170px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* --------------- Grid Template ---------------*/
+
+.container-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 200px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/* -------------- Grid Elements -------------*/
+.item_1{
+    display: flex;
+    grid-area: header;
+    background-color: #5e725f;
+    flex-direction: column;
+}
+
+.item_2{
+    display: flex;
+    grid-area: main;
+    background-color: #5e725f;
+    flex-direction:column;
+}
+
+.item_3{
+    display: flex;
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------- Nav -----------------*/
+.logo-images{
+    width: 10%;
+}
+
+/* ------------------------ Main -------------------------*/
+.article-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.articulo{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    border: 0.5em solid black;
+    border-radius: 2em;
+    padding: 25px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.article-image{
+    width: 230px;
+    height: auto;
+}
+
+.articulo-caracteristics{
+    padding: 20px;
+}
+
+/* ----------------------------------- Footer ---------------------------*/
+
+.contenedor-superior-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.contenedor-inferior-footer{
+    display: flex;
+    flex-direction: column;
+    display: block ;
+    text-align: center;
+    padding: 10px;
+    background-color: #414141;
+}
+
+/* --------------------- Contact ---------------------------*/
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input{
+    width: 300%;
+}
+
+textarea{
+    width: 300%;
+}
+.contact__div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__input{
+    width: 50%;
+    margin: 10px;
+}
+
+}
+
+@media(min-width: 1024px){ /*Pantallas Grandes*/
+    /* --------------- Estilado Global -----------------------------*/
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 0px 10px;
+}
+
+h5{
+    font-size: 17px;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* --------------- Grid Template ---------------*/
+
+.container-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 200px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/* -------------- Grid Elements -------------*/
+.item_1{
+    display: flex;
+    grid-area: header;
+    background-color: #808080;
+    flex-direction: column;
+}
+
+.item_2{
+    display: flex;
+    grid-area: main;
+    background-color: #5e725f;
+    flex-direction:column;
+}
+
+.item_3{
+    display: flex;
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------- Nav -----------------*/
+.logo-images{
+    width: 10%;
+}
+
+/* ------------------------ Main -------------------------*/
+.article-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.articulo{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    border: 0.5em solid black;
+    border-radius: 2em;
+    padding: 25px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.article-image{
+    width: 230px;
+    height: auto;
+}
+
+.articulo-caracteristics{
+    padding: 20px;
+}
+
+/* ----------------------------------- Footer ---------------------------*/
+
+.contenedor-superior-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 10px;
+}
+
+.contenedor-inferior-footer{
+    display: flex;
+    flex-direction: column;
+    display: block ;
+    text-align: center;
+    padding: 10px;
+    background-color: #414141;
+}
+
+/* --------------------- Contact ---------------------------*/
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input{
+    width: 400%;
+}
+
+textarea{
+    width: 400%;
+}
+.contact__div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__input{
+    width: 50%;
+    margin: 10px;
+}
+
 }
 
