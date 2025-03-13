@@ -1,0 +1,10 @@
+@mixin article-image($width, $justify-items){
+    width: $width;
+    height: auto;
+    justify-items: $justify-items;
+}
+
+@mixin flex-direction($direction) {
+    display: flex;
+    flex-direction: $direction;
+  }
