@@ -13,8 +13,9 @@
 </head>
 <body>
     <div class="container-contacto">
+        <input type="checkbox" id="modoOscuro">
         <header class="item_1">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg navar__color navar__text">
                 <div class="container-fluid">
                     <img class="logo-images" src="../img/logo.jpg" alt="logo">
                     <a class="navbar-brand" href="../index.html"><h1>Wiki Sneakers</h1></a>
@@ -38,6 +39,9 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
                             </li>
+                            <li>
+                                <label class="nav-link active" for="modoOscuro">Modo Oscuro</label> 
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -49,15 +53,15 @@
             <form action="" method="post">
                 <div class="contact__div">
                     <label for="nombrecompleto">Nombre Completo:</label>
-                    <input type="text" name="nombrecompleto" id="nombrecompleto">
+                    <input class="contact-input" type="text" name="nombrecompleto" id="nombrecompleto">
                 </div>
                 <div class="contact__div">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
+                    <input class="contact-input" type="email" name="email" id="email">
                 </div>
                 <div class="contact__div">
                     <label for="telefono">Teléfono (Opcional):</label>
-                    <input type="number" name="telefono" id="telefono">
+                    <input class="contact-input" type="number" name="telefono" id="telefono">
                 </div>
                 <div class="contact__div">
                     <label for="mensaje">Mensaje (Opcional):</label>
