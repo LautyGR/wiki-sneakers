@@ -116,13 +116,13 @@
   }
   .article-container {
     display: flex;
-    flex-direction: column;
-    padding: 1em;
+    flex-flow: row wrap;
     justify-content: space-around;
+    align-content: center;
   }
   .cut-article {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     background-color: #E1A100;
     list-style: none;
     border: 5px solid black;
@@ -130,25 +130,33 @@
     padding: 10px;
     margin: 10px;
     justify-content: center;
-    width: 100%;
+    width: 95%;
   }
-  .articulo {
+  .brand-container {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .brand-view {
+    display: flex;
+    flex-flow: row wrap;
     background-color: #E1A100;
-    list-style: none;
     border: 5px solid black;
-    border-radius: 0px;
-    padding: 25px;
-    margin: 20px;
+    border-radius: 20px;
     justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
   }
-  .articulo-caracteristics {
-    padding: 20px;
+  .article__image_view {
+    width: 50%;
+    height: auto;
   }
-  .main__a {
-    color: #0909da;
-    text-decoration: none;
+  .brand__image {
+    width: 90%;
+    height: auto;
+    padding: 10px;
   }
   /* ----------------------------------- Footer ---------------------------*/
   .contenedor-superior-footer {
@@ -253,36 +261,43 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-content: center;
   }
   .cut-article {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     background-color: #E1A100;
-    list-style: none;
     border: 5px solid black;
     border-radius: 0px;
     padding: 10px;
     margin: 10px;
-    justify-content: center;
     width: 47%;
   }
-  .articulo {
+  .brand-container {
     display: flex;
-    flex-direction: column;
-    background-color: #E1A100;
-    list-style: none;
-    border: 5px solid black;
-    border-radius: 0px;
-    padding: 25px;
-    margin: 20px;
+    flex-flow: row wrap;
     justify-content: center;
+    align-content: center;
   }
-  .article-image {
-    width: 230px;
+  .brand-view {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #E1A100;
+    border: 5px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    width: 23%;
+  }
+  .article__image_view {
+    width: 50%;
     height: auto;
   }
-  .articulo-caracteristics {
-    padding: 20px;
+  .brand__image {
+    width: 90%;
+    height: auto;
+    padding: 10px;
   }
   /* ----------------------------------- Footer ---------------------------*/
   .contenedor-superior-footer {
@@ -381,40 +396,44 @@
   .article-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
   }
   .cut-article {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     background-color: #E1A100;
-    list-style: none;
     border: 5px solid black;
     border-radius: 0px;
     padding: 10px;
     margin: 10px;
-    justify-content: center;
-    width: 47%;
-    height: auto;
+    width: 48%;
   }
-  .articulo {
+  .brand-container {
     display: flex;
-    flex-direction: column;
-    background-color: #E1A100;
-    list-style: none;
-    border: 5px solid black;
-    border-radius: 0px;
-    padding: 25px;
-    margin: 20px;
+    flex-flow: row wrap;
     justify-content: center;
+    align-content: center;
   }
-  .articulo:hover {
-    animation: articulo 2s ease;
+  .brand-view {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #E1A100;
+    border: 5px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    width: 23%;
   }
-  .article-image {
-    width: 230px;
+  .article__image_view {
+    width: 50%;
     height: auto;
   }
-  .articulo-caracteristics {
-    padding: 20px;
+  .brand__image {
+    width: 90%;
+    height: auto;
+    padding: 10px;
   }
   /* ----------------------------------- Footer ---------------------------*/
   .contenedor-superior-footer {

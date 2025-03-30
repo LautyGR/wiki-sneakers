@@ -57,44 +57,50 @@
     .article-container{
         display: flex;
         flex-flow: row wrap;
+        justify-content:space-around;
+        align-content: center;
     }
 
-
     .cut-article{
-        @include flex-direction(column);
+        display: flex;
+        flex-flow: column wrap;
         background-color: $forty-color;
-        list-style: none;
         border: 5px solid black;
         border-radius: 0px;
         padding: 10px;
         margin: 10px;
-        justify-content: center;
-        width: 47%;
-        height: auto
+        width: 48%
     }
 
-    .articulo{
-        @include flex-direction(column);
+    .brand-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .brand-view{
+        display: flex;
+        flex-flow: row wrap;
         background-color: $forty-color;
-        list-style: none;
         border: 5px solid black;
-        border-radius: 0px;
-        padding: 25px;
-        margin: 20px;
+        border-radius: 20px;
         justify-content: center;
+        padding: 10px;
+        margin: 10px;
+        width: 23%;
     }
 
-    .articulo:hover{
-        animation: articulo 2s ease;
-    }
-
-    .article-image{
-        width: 230px;
+    .article__image_view{
+        width: 50%;
         height: auto;
     }
 
-    .articulo-caracteristics{
-        padding: 20px;
+    .brand__image{
+        width: 90%;
+        height: auto;
+        padding: 10px
     }
 
     /* ----------------------------------- Footer ---------------------------*/

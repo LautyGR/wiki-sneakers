@@ -137,13 +137,15 @@
     }
 
     .article-container{
-        @include flex-direction(column);
-        padding: 1em;
+        display: flex;
+        flex-flow: row wrap;
         justify-content:space-around;
+        align-content: center;
     }
 
     .cut-article{
-        @include flex-direction(column);
+        display: flex;
+        flex-flow: column wrap;
         background-color: $forty-color;
         list-style: none;
         border: 5px solid black;
@@ -151,27 +153,38 @@
         padding: 10px;
         margin: 10px;
         justify-content: center;
-        width: 100%
+        width: 95%
     }
 
-    .articulo{
-        @include flex-direction(column);
+    .brand-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: center;
+
+    }
+
+    .brand-view{
+        display: flex;
+        flex-flow: row wrap;
         background-color: $forty-color;
-        list-style: none;
         border: 5px solid black;
-        border-radius: 0px;
-        padding: 25px;
-        margin: 20px;
+        border-radius: 20px;
         justify-content: center;
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
     }
 
-    .articulo-caracteristics{
-        padding: 20px;
+    .article__image_view{
+        width: 50%;
+        height: auto;
     }
 
-    .main__a{
-        color: #0909da;
-        text-decoration: none;
+    .brand__image{
+        width: 90%;
+        height: auto;
+        padding: 10px
     }
 
     /* ----------------------------------- Footer ---------------------------*/
