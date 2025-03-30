@@ -1,0 +1,247 @@
+@media(min-width: 0px){
+    /* ----------- Css Reset ---------------*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* --------------- Estilado Global -----------------------------*/
+    body{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: $primary-color;
+    }
+
+
+    h1{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        padding: 0px 10px;
+    }
+
+    h2{
+        font-family: "Roboto Condensed";
+        font-optical-sizing: auto;
+        font-weight:400;
+        font-style: normal;
+        font-size: 30px;
+        padding: 20px;
+        color: white; 
+
+    }
+
+    h3{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    h5{
+        font-size: 17px;
+        color: black;
+    }
+
+    /* --------------- Grid Template ---------------*/
+
+    .container-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 200px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .container-contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 200px;
+        grid-template-areas: 
+        "header"
+        "contacto"
+        "footer";
+    }
+
+    /* -------------- Grid Elements -------------*/
+    .item_1{
+        grid-area: header;
+        background-color: $secondary-color;
+        @include flex-direction(column);
+    }
+
+    .item_2{
+        grid-area: main;
+        background-color: $primary-color;
+        @include flex-direction(column);
+        color: rgb(0, 0, 0);
+    }
+
+
+    .item_3{
+        grid-area: footer;
+        background-color: $secondary-color;
+        color: white;
+        @include flex-direction(column);
+    }
+
+    .item_4{
+        grid-area: contacto;
+        background-color: $primary-color;
+        color: white;
+        @include flex-direction(row);
+    }
+
+    /*----------- Nav -----------------*/
+
+    .nav__a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav__a:hover{
+        text-decoration: underline;
+    }
+
+    .a__decorated{
+        font-weight: bold;
+    }
+    
+    .nav__li{
+        padding: 10px;
+    }
+
+    .navar__h1{
+        color: white;
+    }
+
+    .logo-images{
+        width: 15%;
+    }
+
+    /* ------------------------ Main -------------------------*/
+    .portada{
+        margin: 10px;
+        align-items: center;
+        justify-items: center;
+        color: white
+    }
+
+    .main__h2{
+        color: white;
+        margin: 0px 30px
+    }
+
+    .main__h3{
+        color: white;
+        margin: 0px 40px   
+    }
+
+    .article-container{
+        @include flex-direction(column);
+        padding: 1em;
+        justify-content:space-around;
+    }
+
+    .cut-article{
+        @include flex-direction(column);
+        background-color: $forty-color;
+        list-style: none;
+        border: 5px solid black;
+        border-radius: 0px;
+        padding: 10px;
+        margin: 10px;
+        justify-content: center;
+        width: 100%
+    }
+
+    .articulo{
+        @include flex-direction(column);
+        background-color: $forty-color;
+        list-style: none;
+        border: 5px solid black;
+        border-radius: 0px;
+        padding: 25px;
+        margin: 20px;
+        justify-content: center;
+    }
+
+    .article-image{
+        @include article-image( 100%, center);
+    }
+
+    .articulo-caracteristics{
+        padding: 20px;
+    }
+
+    .main__a{
+        color: #0909da;
+        text-decoration: none;
+    }
+
+    /* ----------------------------------- Footer ---------------------------*/
+
+    .contenedor-superior-footer{
+        @include flex-direction(row);
+        justify-content:space-around;
+        padding: 10px;
+    }
+
+    .contenedor-inferior-footer{
+        @include flex-direction(column);
+        display: block ;
+        text-align: center;
+        padding: 10px;
+        background-color: black;
+    }
+
+    /* --------------------- Contact ---------------------------*/
+    form{
+        @include flex-direction(column);
+        padding: 10px;
+    }
+
+    .contact-input{
+        width: 100%;
+    }
+    
+    .contact__div{
+        @include flex-direction(column);
+    }
+
+    .contact__input{
+        width: 50%;
+        margin: 10px;
+    }
+
+    /* ------------------------ Article Template --------------------*/
+    .article__title{
+         font-size: 32px;
+         margin: 5px 20px;
+         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         text-decoration: underline;
+         color: white;
+    }
+
+    .article__div{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0px 10px;
+        color: white;
+    }
+
+    .article__h2{
+        margin: 10px;
+        color: white;
+    }
+
+    .article__image{
+        width: 40%;
+        height: auto;
+    }
+    
+}
+
+
+
+
+

@@ -1,15 +1,9 @@
 /* Colors */
-@keyframes articulo {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1, 1.11);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+/*@keyframes articulo{
+    0% {transform: scale(1)}
+    50% {transform:  scale(1,1.11);}
+    100% {transform: scale(1)}
+}*/
 @media (min-width: 0px) {
   /* ----------- Css Reset ---------------*/
   * {
@@ -20,7 +14,7 @@
   /* --------------- Estilado Global -----------------------------*/
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #5e725f;
+    background: #2E2E2E;
   }
   h1 {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -34,6 +28,7 @@
     font-style: normal;
     font-size: 30px;
     padding: 20px;
+    color: white;
   }
   h3 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -59,66 +54,91 @@
   /* -------------- Grid Elements -------------*/
   .item_1 {
     grid-area: header;
-    background-color: #808080;
+    background-color: #34495E;
     display: flex;
     flex-direction: column;
   }
   .item_2 {
     grid-area: main;
-    background-image: linear-gradient(to right, #c9c1c1, #5d815d, #c9c1c1);
+    background-color: #2E2E2E;
     display: flex;
     flex-direction: column;
-  }
-  #modoOscuro:checked ~ .item_2 {
-    background-image: linear-gradient(to right, #000000, #5d815d, #000000);
-    color: black;
+    color: rgb(0, 0, 0);
   }
   .item_3 {
     grid-area: footer;
-    background-color: black;
+    background-color: #34495E;
     color: white;
     display: flex;
     flex-direction: column;
   }
   .item_4 {
     grid-area: contacto;
-    background-color: darkgreen;
+    background-color: #2E2E2E;
     color: white;
     display: flex;
     flex-direction: row;
   }
   /*----------- Nav -----------------*/
-  .navar__color {
-    background-color: #ffffff;
-  }
-  body:has(#modoOscuro:checked) .navar__color {
-    background-color: #343434;
-  }
-  body:has(#modoOscuro:checked) .nav-link {
+  .nav__a {
     color: white;
+    text-decoration: none;
   }
-  body:has(#modoOscuro:checked) h1 {
-    color: white;
+  .nav__a:hover {
+    text-decoration: underline;
   }
-  body:has(#modoOscuro:checked) h2 {
+  .a__decorated {
+    font-weight: bold;
+  }
+  .nav__li {
+    padding: 10px;
+  }
+  .navar__h1 {
     color: white;
   }
   .logo-images {
     width: 15%;
   }
   /* ------------------------ Main -------------------------*/
+  .portada {
+    margin: 10px;
+    align-items: center;
+    justify-items: center;
+    color: white;
+  }
+  .main__h2 {
+    color: white;
+    margin: 0px 30px;
+  }
+  .main__h3 {
+    color: white;
+    margin: 0px 40px;
+  }
   .article-container {
     display: flex;
     flex-direction: column;
     padding: 1em;
+    justify-content: space-around;
+  }
+  .cut-article {
+    display: flex;
+    flex-direction: column;
+    background-color: #E1A100;
+    list-style: none;
+    border: 5px solid black;
+    border-radius: 0px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    width: 100%;
   }
   .articulo {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background-color: #E1A100;
     list-style: none;
-    border: 0.5em solid black;
-    border-radius: 2em;
+    border: 5px solid black;
+    border-radius: 0px;
     padding: 25px;
     margin: 20px;
     justify-content: center;
@@ -148,7 +168,7 @@
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #414141;
+    background-color: black;
   }
   /* --------------------- Contact ---------------------------*/
   form {
@@ -179,6 +199,7 @@
     display: flex;
     flex-flow: row wrap;
     margin: 0px 10px;
+    color: white;
   }
   .article__h2 {
     margin: 10px;
@@ -236,14 +257,29 @@
   .article-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
   }
-  .articulo {
-    background-color: yellow;
+  .cut-article {
     display: flex;
     flex-direction: column;
-    border-radius: 2em;
-    padding: 25px;
+    background-color: #E1A100;
+    list-style: none;
+    border: 5px solid black;
+    border-radius: 0px;
+    padding: 10px;
     margin: 10px;
+    justify-content: center;
+    width: 47%;
+  }
+  .articulo {
+    display: flex;
+    flex-direction: column;
+    background-color: #E1A100;
+    list-style: none;
+    border: 5px solid black;
+    border-radius: 0px;
+    padding: 25px;
+    margin: 20px;
     justify-content: center;
   }
   .article-image {
@@ -266,7 +302,7 @@
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #414141;
+    background-color: #000000;
   }
   /* --------------------- Contact ---------------------------*/
   form {
@@ -355,13 +391,28 @@
     display: flex;
     flex-flow: row wrap;
   }
-  .articulo {
-    background-color: yellow;
+  .cut-article {
     display: flex;
     flex-direction: column;
-    border-radius: 2em;
-    padding: 25px;
+    background-color: #E1A100;
+    list-style: none;
+    border: 5px solid black;
+    border-radius: 0px;
+    padding: 10px;
     margin: 10px;
+    justify-content: center;
+    width: 47%;
+    height: auto;
+  }
+  .articulo {
+    display: flex;
+    flex-direction: column;
+    background-color: #E1A100;
+    list-style: none;
+    border: 5px solid black;
+    border-radius: 0px;
+    padding: 25px;
+    margin: 20px;
     justify-content: center;
   }
   .articulo:hover {
@@ -387,7 +438,7 @@
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #414141;
+    background-color: #000000;
   }
   /* --------------------- Contact ---------------------------*/
   form {
