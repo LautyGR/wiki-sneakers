@@ -143,11 +143,6 @@
     margin: 20px;
     justify-content: center;
   }
-  .article-image {
-    width: 100%;
-    height: auto;
-    justify-items: center;
-  }
   .articulo-caracteristics {
     padding: 20px;
   }
@@ -339,10 +334,6 @@
   .article__h2 {
     margin: 10px;
   }
-  .article__image {
-    width: 40%;
-    height: auto;
-  }
 }
 @media (min-width: 1024px) { /*Pantallas Grandes*/
   /* --------------- Estilado Global -----------------------------*/
@@ -476,7 +467,7 @@
     margin: 10px;
   }
   .article__image {
-    width: 40%;
+    width: 50%;
     height: auto;
   }
   /* sass --watch scss/style.scss:css/style.css*/

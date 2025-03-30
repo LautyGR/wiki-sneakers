@@ -165,10 +165,6 @@
         justify-content: center;
     }
 
-    .article-image{
-        @include article-image( 100%, center);
-    }
-
     .articulo-caracteristics{
         padding: 20px;
     }
