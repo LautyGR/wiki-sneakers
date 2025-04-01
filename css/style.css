@@ -1,9 +1,15 @@
 /* Colors */
-/*@keyframes articulo{
-    0% {transform: scale(1)}
-    50% {transform:  scale(1,1.11);}
-    100% {transform: scale(1)}
-}*/
+@keyframes articulo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1, 1.11);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media (min-width: 0px) {
   /* ----------- Css Reset ---------------*/
   * {
@@ -126,18 +132,24 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
+    text-align: center;
   }
   .cut-article {
     display: flex;
     flex-flow: column wrap;
-    background-color: #E1A100;
+    background-color: #b28000;
     list-style: none;
     border: 5px solid black;
     border-radius: 0px;
     padding: 10px;
     margin: 10px;
-    justify-content: center;
-    width: 95%;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cut-article:hover {
+    animation: articulo 1s ease;
   }
   .article__a {
     color: #C0392B;
@@ -145,24 +157,32 @@
   }
   .brand-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    justify-content: center;
     align-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
   }
   .brand-view {
     display: flex;
     flex-flow: row wrap;
-    background-color: #E1A100;
+    background-color: #b28000;
     border: 5px solid black;
     border-radius: 20px;
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    width: 90%;
+    width: 60%;
+    height: 350px;
+  }
+  .brand-view:hover {
+    animation: articulo 1s ease;
   }
   .article__image_view {
-    width: 50%;
+    width: 90%;
     height: auto;
+    margin: auto;
   }
   .brand__image {
     width: 90%;
@@ -171,6 +191,16 @@
   }
   .who_we_are {
     margin: 1% 3%;
+  }
+  .yo_formal {
+    width: 50%;
+    align-items: center;
+    border: black solid 5px;
+    transition: opacity 1s ease;
+  }
+  .center {
+    margin: 20px;
+    text-align: center;
   }
   /* ----------------------------------- Footer ---------------------------*/
   .contenedor-superior-footer {
@@ -204,6 +234,13 @@
     width: 50%;
     margin: 10px;
   }
+  input {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  input:hover {
+    background-color: #34495E; /* Cambia el color de fondo */
+    border-color: rgb(0, 0, 0); /* Cambia el color del borde */
+  }
   /* ------------------------ Article Template --------------------*/
   .article__title {
     font-size: 32px;
@@ -211,12 +248,21 @@
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     text-decoration: underline;
     color: white;
+    text-align: center;
   }
   .article__div {
     display: flex;
     flex-flow: row wrap;
     margin: 0px 10px;
     color: white;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+  }
+  .article__p {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
   }
   .article__h2 {
     margin: 10px;
@@ -274,44 +320,61 @@
   .article-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
   }
   .cut-article {
     display: flex;
     flex-flow: column wrap;
-    background-color: #E1A100;
+    background-color: #b28000;
     border: 5px solid black;
     border-radius: 0px;
     padding: 10px;
     margin: 10px;
-    width: 47%;
+    width: 45%;
+    align-content: center;
   }
   .brand-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
   }
   .brand-view {
     display: flex;
     flex-flow: row wrap;
-    background-color: #E1A100;
+    background-color: #b28000;
     border: 5px solid black;
     border-radius: 20px;
     justify-content: center;
+    align-content: center;
     padding: 10px;
     margin: 10px;
-    width: 23%;
+    width: 25%;
+    height: 300px;
+    text-align: center;
   }
   .article__image_view {
-    width: 50%;
+    width: 100%;
     height: auto;
   }
   .brand__image {
     width: 90%;
     height: auto;
     padding: 10px;
+  }
+  .yo_formal {
+    width: 75%;
+    align-items: center;
+    border: black solid 5px;
+    transition: opacity 1s ease;
+  }
+  .center {
+    margin: 20px;
+    text-align: center;
   }
   /* ----------------------------------- Footer ---------------------------*/
   .contenedor-superior-footer {
@@ -359,6 +422,11 @@
     display: flex;
     flex-flow: row wrap;
     margin: 5px 20px;
+    padding: 20px;
+  }
+  .article__p {
+    width: 100%;
+    font-size: 18px;
   }
   .article__h2 {
     margin: 10px;
@@ -410,44 +478,63 @@
   .article-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
+    text-align: center;
   }
   .cut-article {
     display: flex;
     flex-flow: column wrap;
-    background-color: #E1A100;
+    background-color: #b28000;
+    list-style: none;
     border: 5px solid black;
     border-radius: 0px;
     padding: 10px;
     margin: 10px;
-    width: 48%;
+    align-content: center;
+    align-items: center;
+    width: 45%;
+    text-align: center;
   }
   .brand-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
   }
   .brand-view {
     display: flex;
     flex-flow: row wrap;
-    background-color: #E1A100;
+    background-color: #b28000;
     border: 5px solid black;
     border-radius: 20px;
     justify-content: center;
     padding: 10px;
     margin: 10px;
-    width: 23%;
+    width: 30%;
+    height: 500px;
   }
   .article__image_view {
-    width: 50%;
+    width: 350px;
     height: auto;
+    margin: auto;
   }
   .brand__image {
     width: 90%;
     height: auto;
     padding: 10px;
+  }
+  .yo_formal {
+    width: 25%;
+    align-items: center;
+    border: black solid 5px;
+  }
+  .center {
+    margin: 20px;
+    text-align: center;
   }
   /* ----------------------------------- Footer ---------------------------*/
   .contenedor-superior-footer {
@@ -495,6 +582,12 @@
     display: flex;
     flex-flow: row wrap;
     margin: 5px 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .article__p {
+    width: 90%;
+    font-size: 18px;
   }
   .article__h2 {
     margin: 10px;

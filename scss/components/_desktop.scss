@@ -57,26 +57,35 @@
     .article-container{
         display: flex;
         flex-flow: row wrap;
-        justify-content:space-around;
+        justify-content:space-evenly;
         align-content: center;
+        text-align: center;
     }
 
     .cut-article{
         display: flex;
         flex-flow: column wrap;
         background-color: $forty-color;
+        list-style: none;
         border: 5px solid black;
         border-radius: 0px;
         padding: 10px;
         margin: 10px;
-        width: 48%
+        align-content: center;
+        align-items: center;
+        width: 45%;
+        text-align: center;
     }
+
 
     .brand-container{
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
+        width: 100%;
+        text-align: center;
+        align-items: center;
 
     }
 
@@ -89,18 +98,32 @@
         justify-content: center;
         padding: 10px;
         margin: 10px;
-        width: 23%;
+        width: 30%;
+        height: 500px;
     }
 
     .article__image_view{
-        width: 50%;
+        width: 350px;
         height: auto;
+        margin: auto;
+
     }
 
     .brand__image{
         width: 90%;
         height: auto;
         padding: 10px
+    }
+
+    .yo_formal{
+        width: 25%;
+        align-items: center;
+        border: black solid 5px
+    }
+
+    .center{
+        margin: 20px;
+        text-align: center;
     }
 
     /* ----------------------------------- Footer ---------------------------*/
@@ -157,6 +180,13 @@
        display: flex;
        flex-flow: row wrap;
        margin: 5px 30px;
+       width: 100%;
+       text-align: center;
+    }
+
+    .article__p{
+        width: 90%;
+        font-size: 18px;
     }
    
    .article__h2{
@@ -166,6 +196,7 @@
     .article__image{
         width: 50%;
         height: auto;
+        
     }
    /* sass --watch scss/style.scss:css/style.css*/ 
    

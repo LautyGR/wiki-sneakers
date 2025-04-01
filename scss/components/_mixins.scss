@@ -7,5 +7,9 @@
 @mixin flex-direction($direction) {
     display: flex;
     flex-direction: $direction;
-    
-  }
+}
+
+@mixin width($width){
+    width: $width;
+
+}
